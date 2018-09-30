@@ -1,0 +1,37 @@
+type User {
+  id: ID! @unique
+  email: String! @unique
+  password: String!
+  name: String!
+  jobs: [Job!]!
+  company: Company,
+  createdAt: DateTime!
+}
+
+type Job {
+  id: ID! @unique
+  description: String,
+  owner: User,
+  title: String,
+  isPublished: Boolean @default(value: "false")
+  location: String,
+  company: Company,
+  workingTime: String,
+  categoty: String
+  tags: String,
+  createdAt: DateTime!
+  isTopped: Boolean @default(value: "false")
+}
+
+type Company {
+  id: ID! @unique,
+  companyName: String,
+  companyLogoUrl: String,
+  companyCoverImageUrl: String,
+  companyDescription: String,
+  contactLinkOrEmail: String,
+  companyWebsite: String,
+  author: User,
+  createdAt: DateTime!
+  jobs: [Job!]!,
+}

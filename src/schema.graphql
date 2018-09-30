@@ -1,0 +1,69 @@
+# import Job, Company from "./generated/prisma.graphql"
+
+type Query {
+  me: User
+  jobs(filter: [String], orderBy: String): [Job]
+  similarJobs(filter: [String], orderBy: String): [Job]
+  job(filter: String, id: ID): Job
+  companies: [Company]
+  company(filter: String, id: ID): Company
+
+}
+
+type Mutation {
+  signup(email: String!, password: String!, name: String!): AuthPayload!
+
+  login(email: String!, password: String!): AuthPayload!
+  createJob(
+    title: String!
+    description: String!
+    location: String!
+    tags: String!
+    workingTime: String!
+    companyId: String!
+    isTopped: Boolean!
+  ): Job!
+
+  updateJob(
+    title: String!
+    description: String!
+    location: String!
+    tags: String!
+    workingTime: String!
+    id: ID
+  ): Job!
+
+  createCompany(
+    companyName: String,
+    companyDescription: String,
+    companyLogoUrl: String,
+    companyCoverImageUrl: String,
+    contactLinkOrEmail: String,
+    companyWebsite: String,
+  ): Company!
+
+  updateCompany(
+    id: ID!
+    companyName: String,
+    companyDescription: String,
+    companyLogoUrl: String,
+    companyCoverImageUrl: String,
+    contactLinkOrEmail: String,
+    companyWebsite: String,
+  ): Company!
+  
+  deleteJob(id: ID!): Job!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type User {
+  id: ID!
+  email: String!
+  name: String!
+  jobs: [Job!]!,
+  company: Company,
+}

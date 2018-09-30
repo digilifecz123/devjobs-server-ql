@@ -1,0 +1,95 @@
+{
+  "valueType": "relations",
+  "values": [
+      [{
+          "_typeName": "User",
+          "id": "cjmlya61bajmx0b78sfrvaw2p",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjmlykt03al6b0b78j61xmqav",
+          "fieldName": "author"
+      }],
+      [{
+          "_typeName": "User",
+          "id": "cjjooqed50tpv0b22j2kdnvvh",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjmm17dpyb0in0b78mtf49k8m",
+          "fieldName": "author"
+      }],
+      [{
+          "_typeName": "Job",
+          "id": "cjjdcrh8nqzrs0b82ycozvivt",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjjdcrh2lqzro0b82gopuyqt3",
+          "fieldName": "jobs"
+      }],
+      [{
+          "_typeName": "Job",
+          "id": "cjjgav419blfo0b2276ith2dh",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjjgav3uwblfk0b22gwk8bm01",
+          "fieldName": "jobs"
+      }],
+      [{
+          "_typeName": "Job",
+          "id": "cjjixyuhuxdaq0b22mfbp0016",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjjixyub00us80a37avyofz5u",
+          "fieldName": "jobs"
+      }],
+      [{
+          "_typeName": "Job",
+          "id": "cjjmplfjkjija0b22wf218yj4",
+          "fieldName": "company"
+      }, {
+          "_typeName": "Company",
+          "id": "cjjmplf9yjij60b225bqr1lbq",
+          "fieldName": "jobs"
+      }],
+      [{
+          "_typeName": "User",
+          "id": "cjjooqed50tpv0b22j2kdnvvh",
+          "fieldName": "jobs"
+      }, {
+          "_typeName": "Job",
+          "id": "cjjdcrh8nqzrs0b82ycozvivt",
+          "fieldName": "owner"
+      }],
+      [{
+          "_typeName": "User",
+          "id": "cjjooqed50tpv0b22j2kdnvvh",
+          "fieldName": "jobs"
+      }, {
+          "_typeName": "Job",
+          "id": "cjjgav419blfo0b2276ith2dh",
+          "fieldName": "owner"
+      }],
+      [{
+          "_typeName": "User",
+          "id": "cjjooqed50tpv0b22j2kdnvvh",
+          "fieldName": "jobs"
+      }, {
+          "_typeName": "Job",
+          "id": "cjjixyuhuxdaq0b22mfbp0016",
+          "fieldName": "owner"
+      }],
+      [{
+          "_typeName": "User",
+          "id": "cjjooqed50tpv0b22j2kdnvvh",
+          "fieldName": "jobs"
+      }, {
+          "_typeName": "Job",
+          "id": "cjjmplfjkjija0b22wf218yj4",
+          "fieldName": "owner"
+      }]
+  ]
+}
